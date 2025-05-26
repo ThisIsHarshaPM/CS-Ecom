@@ -1,0 +1,232 @@
+/* General Reset and Font */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #0b5ed7;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #007bff, #6610f2);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.product p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #28a745;
+}
+
+.product button {
+  background-color: #0b5ed7;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #084298;
+}
+
+/* Cart Page */
+.cart {
+  padding: 2rem;
+}
+
+.cart h2 {
+  text-align: center;
+}
+
+#cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.total {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.checkout-button {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.checkout-button .btn {
+  background-color: #198754;
+  color: white;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.checkout-button .btn:hover {
+  background-color: #146c43;
+}
+
+/* Checkout Page */
+.checkout {
+  padding: 2rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.checkout form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkout label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.checkout input, .checkout textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.checkout button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background-color: #0a58ca;
+}
+
+#order-success {
+  text-align: center;
+  font-size: 1.2rem;
+  color: green;
+  margin-top: 2rem;
+}
+
+/* Contact Page */
+.contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+footer .logo {
+  font-weight: bold;
+}
+
+footer nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header, footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+}
