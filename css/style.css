@@ -8,7 +8,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #0b5ed7;
+  background-color: #030303;
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -35,7 +35,7 @@ nav a:hover {
 .hero {
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(to right, #007bff, #6610f2);
+  background: linear-gradient(to right, #ba8fff, #ba8fff);
   color: white;
 }
 
